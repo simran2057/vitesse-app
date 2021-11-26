@@ -1,6 +1,10 @@
+
+<script setup lang="ts">
+
+</script>
 <template>
   <form action="#" class="space-y-6 shadow-2xl h-130 font-serif">
-    <h1 class="text-2xl font-bold text-black pt-6">REGISTER</h1>
+    <h1 class="text-2xl font-bold text-black pt-6"> REGISTER</h1>
     <input class=" px-4 py-2 w-70 border rounded-md focus:ring" type="text" name="name" placeholder="Username" required /><br>
     <input class=" px-4 py-2 w-70 border rounded-md focus:ring" type="email" name="email" placeholder="Email Address" required /><br>
     <input class=" px-4 py-2 w-70 border rounded-md focus:outline-none focus:ring" type="password" name="password" placeholder="Password" required />

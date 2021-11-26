@@ -54,4 +54,5 @@ export const planetChartData = {
     },
   },
 }
+
 export default planetChartData

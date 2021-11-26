@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import { ref } from "vue";
+
 import { users } from '~/data/users';
 import { charts } from '~/data/charts';
 import { DashboardWidth } from '~/composables';
+const date = ref('')
 // const app = Vue.createApp(userdata)
 // app.component('UserTable', {
 //   props: ['user'],
@@ -134,7 +137,7 @@ import { DashboardWidth } from '~/composables';
           </div>
         </div>
       </section>
-
+<vuejs-datepicker />
       <!-- Users -->
       <h1 class="text-lg text-left py-7">Users</h1>
       <div class="users-table mb-10">
@@ -170,6 +173,9 @@ import { DashboardWidth } from '~/composables';
             </tr>
           </tbody>
         </table>
+        <vuejs-datepicker />
+            <VueDateTimePicker v-model="date" class="w-10 h-8 bg-black z-10"  />
+
         <router-view></router-view>
       </div>
     </main>
